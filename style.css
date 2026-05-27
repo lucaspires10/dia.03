@@ -1,0 +1,98 @@
+/* Reset básico e centralização na tela */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+body {
+    background-color: #0b0f19; /* Fundo escuro gamer */
+    background-image: radial-gradient(circle at 50% 50%, #1e1b4b 0%, #0b0f19 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #f3f4f6;
+    padding: 20px;
+}
+
+/* Transformando o corpo em um bloco organizado */
+body > p {
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilização dos Textos (Nome e Nota) */
+label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #a5b4fc; /* Roxo claro para destacar */
+    letter-spacing: 0.5px;
+}
+
+/* Estilização das Caixas de Entrada (Inputs) */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: #111827; /* Fundo do input escuro */
+    border: 2px solid #374151;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+/* Efeito ao clicar no input (Foco) */
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #6366f1; /* Borda Roxa/Índigo */
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+    background-color: #1f2937;
+}
+
+/* Estilização do Botão de Calcular */
+button {
+    width: 100%;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: #ffffff;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+    margin-top: 10px;
+}
+
+/* Efeitos do Botão (Passar o mouse e Clicar) */
+button:hover {
+    background: linear-gradient(135deg, #818cf8 0%, #4f46e5 100%);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(79, 70, 229, 0.3);
+}
+
+/* Estilo extra para o caso de você exibir o resultado em algum lugar */
+#resultado {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #34d399; /* Verde para destacar o sucesso/nota */
+    text-align: center;
+}
