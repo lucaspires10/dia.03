@@ -9,7 +9,7 @@ alert(' O' + nome +'esta reprovado'+ nota);
 
 }
 if(nota >5 && nota<7){
-   alert('O (a) aluno' +nome + 'esta de recuperacao'+ nota);
+   alert('O (a) aluno (a) ' +nome + ' esta de recuperacao ' + nota );
 }
 
  if (nota >=7){
