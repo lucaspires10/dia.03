@@ -5,7 +5,7 @@ var nome =document.querySelector('#nome_aluno').value;
 var nota =document.querySelector('#nota_aluno').value;
 console.log(nota);
 if (nota <=5){
-alert(' O' + nome +'esta reprovado'+ nota);
+alert(' O (a)  ' + Nome + ' esta reprovado ' + nota);
 
 }
 if(nota >5 && nota<7){
